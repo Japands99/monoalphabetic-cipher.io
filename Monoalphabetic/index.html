@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monoalphabetic Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Monoalphabetic Cipher</h1>
+  <script src="script.js"></script>
+
+  <label for="plaintext">Plaintext:</label>
+  <textarea id="plaintext" rows="4"></textarea>
+
+  <br>
+
+  <label for="key">Key:</label>
+  <input type="text" id="key">
+
+  <br>
+  </div>
+  <button onclick="encrypt()">Encrypt</button>
+  <button onclick="decrypt()">Decrypt</button>
+
+  <br><br>
+
+  <label for="ciphertext">Ciphertext:</label>
+  <textarea id="ciphertext" rows="4"></textarea>
+
+  <br>
+
+  <button onclick="handleDownloadFile()">Download Encoded Text</button>
+  <br><br>
+  <label for="uploadFile">Upload Ciphertext File:</label>
+  <input type="file" id="uploadFile" onchange="handleUploadFile(this)">
+  <button onclick="handleDecodeFile()">Decode File</button>
+</body>
+</html>
